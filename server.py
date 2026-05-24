@@ -8,7 +8,7 @@ from google import genai
 # 1. Setup the Brain (Gemini)
 # We use os.getenv to pull the key SECURELY from Railway Variables
 api_key = os.getenv("GOOGLE_API_KEY")
-client = genai.Client(api_key=AIzaSyARIrVwmX5H906TluwCrqbtrkc5J1VfiG4)
+client = genai.Client(api_key=api_key)
 
 app = FastAPI()
 
