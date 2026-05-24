@@ -34,7 +34,7 @@ async def chat_endpoint(chat_request: ChatRequest):
         
         # Call the Gemini API
         response = client.models.generate_content(
-            model="gemini-2.0-flash", 
+            model="gemini-1.5-flash", 
             contents=chat_request.message
         )
         
